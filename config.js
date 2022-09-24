@@ -19,9 +19,9 @@ global.APIKeys = {
 }
 
 // Other
-global.owner = ['6285798048939']
-global.ownernomer = "6285798048939"
-global.premium = ['6285798048939']
+global.owner = ['6285798048936']
+global.ownernomer = "6285798048936"
+global.premium = ['6285798048936']
 global.packname = 'KAORI BOT'
 global.author = 'RAMDAN'
 global.sessionName = 'session'
