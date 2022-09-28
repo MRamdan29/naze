@@ -562,11 +562,11 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
             }
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                naze.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/24a32c85a2dac4538fd56.jpg' }, caption: `*${ucapanWaktu} Kak ${m.pushName}*\n\n *Jika ingin berdonasi silahkan scan gambar diatas*\n\n*Atau bisa lewat pulsa\n_Indosat : 085798048936_\n\n*Atau Transfer via*\n- *Gopay Dana Ovo Qris ShopeePay*\n Ke nomer berikut : 085798048936\n\n_Terima kasih bagi yang sudah donasi_` }, { quoted: m })
+                naze.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/24a32c85a2dac4538fd56.jpg' }, caption: `*${ucapanWaktu} Kak ${m.pushName}*\n\n *Bismillah.. Jika ingin berdonasi silahkan scan gambar diatas*\n\n*Atau bisa lewat pulsa*\n_Indosat : 085798048936_\n\n*Atau Transfer via*\n- *Gopay Dana Ovo Qris ShopeePay*\n Ke nomer berikut : 085798048936\n\n_Syukron bagi yang sudah donas🙏i_` }, { quoted: m })
             }
             break
             case 'sc': {
-                m.reply('https://wa.me/6285798048936')
+                m.reply('Untuk Script bot nya Hubungi https://wa.me/6285798048936')
             }
             break
             case 'chat': {
@@ -1964,7 +1964,7 @@ break
                     m.reply(`ID : ${anu.result.gameId}\nUsername : ${anu.result.userName}`)
 		    db.data.users[m.sender].limit -= 1
                 } else if (type.toLowerCase() == 'ig') {
-                    if (!id) throw `No Query username, Example : ${prefix + command} ig cak_haho`
+                    if (!id) throw `No Query username, Example : ${prefix + command} ig cak_ha`
                     let { result: anu } = await fetchJson(api('zenz', '/api/stalker/ig', { username: id }, 'apikey'))
                     if (anu.status == false) return m.reply(anu.result.message)
                     naze.sendMedia(m.chat, anu.caption.profile_hd, '', `⭔ Full Name : ${anu.caption.full_name}\n⭔ User Name : ${anu.caption.user_name}\n⭔ ID ${anu.caption.user_id}\n⭔ Followers : ${anu.caption.followers}\n⭔ Following : ${anu.caption.following}\n⭔ Bussines : ${anu.caption.bussines}\n⭔ Profesional : ${anu.caption.profesional}\n⭔ Verified : ${anu.caption.verified}\n⭔ Private : ${anu.caption.private}\n⭔ Bio : ${anu.caption.biography}\n⭔ Bio Url : ${anu.caption.bio_url}`, m)
@@ -2727,10 +2727,10 @@ let alfamart = `628111500959@s.whatsapp.net`
             case 'menu': {
             let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
-            let jawab = `*Bot by M Ramdan Ismail* 
-${ucapanWaktu}\n-Creator : @${ownernya.split('@')[0]}\n-Lu : @${me.split('@')[0]}\n-Powered  : @${ini_mark.split('@')[0]}`
+            let jawab = `*Bot Alquran by M Ramdan Ismail*
+${ucapanWaktu}\n•Creator Bot Alquran : @${ownernya.split('@')[0]}\n•Pengguna Bot : @${me.split('@')[0]}\n-Powered  : @${ini_mark.split('@')[0]}`
             let ments = [ownernya, me, ini_mark]
-            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: '❗Rules' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+            let buttons = [{ buttonId: 'mislamic', buttonText: { displayText: '🕌 Menu Islami' }, type: 1 },{ buttonId: 'simplemenu', buttonText: { displayText: '📌 Menu lain' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏 Donasi' }, type: 1 }]
             await naze.sendButtonText(m.chat, buttons, jawab, nyoutube, m, {mentions: ments})
             }
             break
@@ -2885,8 +2885,6 @@ rndom = `┌──⭓ *Random Menu*
 │⭔ ${prefix}katasenja
 │⭔ ${prefix}puisi
 │⭔ ${prefix}couple
-│⭔ ${prefix}anime
-│⭔ ${prefix}waifu
 │
 └───────⭓`
 let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
@@ -2896,13 +2894,11 @@ let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '⬅️Back'
             case 'mtextpro': {
 txtpro = `┌──⭓ *Text Pro Menu*
 │
-│⭔ ${prefix}3dchristmas
 │⭔ ${prefix}3ddeepsea
 │⭔ ${prefix}americanflag
 │⭔ ${prefix}3dscifi
 │⭔ ${prefix}3drainbow
 │⭔ ${prefix}3dwaterpipe
-│⭔ ${prefix}halloweenskeleton
 │⭔ ${prefix}sketch
 │⭔ ${prefix}bluecircuit
 │⭔ ${prefix}space
@@ -2923,7 +2919,6 @@ txtpro = `┌──⭓ *Text Pro Menu*
 │⭔ ${prefix}harrypotter
 │⭔ ${prefix}foggywindow
 │⭔ ${prefix}neondevils
-│⭔ ${prefix}christmasholiday
 │⭔ ${prefix}3dgradient
 │⭔ ${prefix}blackpink
 │⭔ ${prefix}gluetext
@@ -3111,10 +3106,10 @@ let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '⬅️Back'
             case 'mislamic': {
 islmic = `┌──⭓ *Islamic Menu*
 │
+│ Assalamualaikum 🤗❤️ 
 │⭔ ${prefix}iqra
 │⭔ ${prefix}hadist
 │⭔ ${prefix}alquran
-│⭔ ${prefix}juzamma
 │⭔ ${prefix}tafsirsurah
 │
 └───────⭓`
@@ -3246,19 +3241,15 @@ let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '⬅️Back'
 │⭔ ${prefix}katasenja
 │⭔ ${prefix}puisi
 │⭔ ${prefix}couple
-│⭔ ${prefix}anime
-│⭔ ${prefix}waifu
 │
 └───────⭓
 ┌──⭓ *Text Pro Menu*
 │
-│⭔ ${prefix}3dchristmas
 │⭔ ${prefix}3ddeepsea
 │⭔ ${prefix}americanflag
 │⭔ ${prefix}3dscifi
 │⭔ ${prefix}3drainbow
 │⭔ ${prefix}3dwaterpipe
-│⭔ ${prefix}halloweenskeleton
 │⭔ ${prefix}sketch
 │⭔ ${prefix}bluecircuit
 │⭔ ${prefix}space
@@ -3279,7 +3270,6 @@ let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '⬅️Back'
 │⭔ ${prefix}harrypotter
 │⭔ ${prefix}foggywindow
 │⭔ ${prefix}neondevils
-│⭔ ${prefix}christmasholiday
 │⭔ ${prefix}3dgradient
 │⭔ ${prefix}blackpink
 │⭔ ${prefix}gluetext
@@ -3425,7 +3415,6 @@ let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '⬅️Back'
 │⭔ ${prefix}iqra
 │⭔ ${prefix}hadist
 │⭔ ${prefix}alquran
-│⭔ ${prefix}juzamma
 │⭔ ${prefix}tafsirsurah
 │
 └───────⭓
@@ -3460,7 +3449,7 @@ let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '⬅️Back'
 │
 └───────⭓
 _Donasi Ngab_\n_Jangan Ngarep Free Mulu_`
-                let buttons = [{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: '❗Rules' }, type: 1 }]
+                let buttons = [{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 },{ buttonId: 'owner', buttonText: { displayText: '🔥 Owner' }, type: 1 }]
             await naze.sendButtonText(m.chat, buttons, anu, nyoutube, m, {mentions: ments})
             }
             break
