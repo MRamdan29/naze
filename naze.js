@@ -22,7 +22,7 @@ const hariini = moment.tz('Asia/Jakarta').format('dddd, DD MMMM YYYY')
 const barat = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 const tengah = moment.tz('Asia/Makassar').format('HH:mm:ss')
 const timur = moment.tz('Asia/Jayapura').format('HH:mm:ss')
-const nyoutube = ('© Naze\nYoutube/Sc :\nhttps://youtube.com/c/Nazedev')  //ubah di config biar ngk emror
+const nyoutube = ('© Ramdan\nInstagram :\nhttps://instagram.com/ramdan_we?igshid=YmMyMTA2M2Y=')  //ubah di config biar ngk emror
 const ini_mark = `0@s.whatsapp.net`
 
 //TIME
@@ -562,11 +562,11 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
             }
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                naze.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*${ucapanWaktu} Kak ${m.pushName}*\n\n *Jika ingin berdonasi silahkan scan gambar diatas*\n\n*Atau klik link dibawah ini*\n_https://saweria.co/naze_\n\n*Atau Transfer via*\n- *Gopay Dana Ovo Qris ShopeePay*\n Ke nomer berikut : 082113821188\n\n_Terima kasih bagi yang sudah donasi_` }, { quoted: m })
+                naze.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/24a32c85a2dac4538fd56.jpg' }, caption: `*${ucapanWaktu} Kak ${m.pushName}*\n\n *Jika ingin berdonasi silahkan scan gambar diatas*\n\n*Atau bisanlewat pulsai*\n_Indosat : 085898048936_\n\n*Atau Transfer via*\n- *Gopay Dana Ovo Qris ShopeePay*\n Ke nomer berikut : 085798048936\n\n_Terima kasih bagi yang sudah donasi_` }, { quoted: m })
             }
             break
             case 'sc': {
-                m.reply('https://wa.me/6285822347348')
+                m.reply('https://wa.me/6285798048936')
             }
             break
             case 'chat': {
@@ -2727,7 +2727,7 @@ let alfamart = `628111500959@s.whatsapp.net`
             case 'menu': {
             let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
-            let jawab = `*Bot by Naze Dev* 
+            let jawab = `*Bot by M Ramdan Ismail* 
 ${ucapanWaktu}\n-Creator : @${ownernya.split('@')[0]}\n-Lu : @${me.split('@')[0]}\n-Powered  : @${ini_mark.split('@')[0]}`
             let ments = [ownernya, me, ini_mark]
             let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: '❗Rules' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
@@ -3158,7 +3158,7 @@ oner = `┌──⭓ *Owner Menu*
 │⭔ ${prefix}setmenu [option]
 │
 └───────⭓`
-let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏' }, type: 1 }]
             await naze.sendButtonText(m.chat, buttons, oner, nyoutube, m)
             }
             break
