@@ -22,7 +22,7 @@ const hariini = moment.tz('Asia/Jakarta').format('dddd, DD MMMM YYYY')
 const barat = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 const tengah = moment.tz('Asia/Makassar').format('HH:mm:ss')
 const timur = moment.tz('Asia/Jayapura').format('HH:mm:ss')
-const nyoutube = ('© Ramdan\nInstagram :\nhttps://instagram.com/ramdan_we?igshid=YmMyMTA2M2Y=')  //ubah di config biar ngk emror
+const nyoutube = ('© Ramdan\nInstagram :\nhttps://instagram.com/ramdan_we')  //ubah di config biar ngk emror
 const ini_mark = `0@s.whatsapp.net`
 
 //TIME
@@ -562,7 +562,7 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
             }
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                naze.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/24a32c85a2dac4538fd56.jpg' }, caption: `*${ucapanWaktu} Kak ${m.pushName}*\n\n *Jika ingin berdonasi silahkan scan gambar diatas*\n\n*Atau bisanlewat pulsai*\n_Indosat : 085898048936_\n\n*Atau Transfer via*\n- *Gopay Dana Ovo Qris ShopeePay*\n Ke nomer berikut : 085798048936\n\n_Terima kasih bagi yang sudah donasi_` }, { quoted: m })
+                naze.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/24a32c85a2dac4538fd56.jpg' }, caption: `*${ucapanWaktu} Kak ${m.pushName}*\n\n *Jika ingin berdonasi silahkan scan gambar diatas*\n\n*Atau bisa lewat pulsa\n_Indosat : 085798048936_\n\n*Atau Transfer via*\n- *Gopay Dana Ovo Qris ShopeePay*\n Ke nomer berikut : 085798048936\n\n_Terima kasih bagi yang sudah donasi_` }, { quoted: m })
             }
             break
             case 'sc': {
